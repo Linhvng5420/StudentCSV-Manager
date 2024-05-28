@@ -15,11 +15,18 @@
 		2207C3582BFF19E000EFE107 /* QuanLyDiemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207C3572BFF19E000EFE107 /* QuanLyDiemTests.swift */; };
 		2207C3622BFF19E000EFE107 /* QuanLyDiemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207C3612BFF19E000EFE107 /* QuanLyDiemUITests.swift */; };
 		2207C3642BFF19E000EFE107 /* QuanLyDiemUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207C3632BFF19E000EFE107 /* QuanLyDiemUITestsLaunchTests.swift */; };
+		223C73802C030AE200567A06 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C737F2C030AE200567A06 /* SplashScreenViewController.swift */; };
 		2241C25B2BFF2E55004C6079 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241C25A2BFF2E55004C6079 /* LoginViewController.swift */; };
-		2241C2612BFF413E004C6079 /* hocsinh.scv in Resources */ = {isa = PBXBuildFile; fileRef = 2241C2602BFF413E004C6079 /* hocsinh.scv */; };
 		224C99E62C00574200A17238 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C99E52C00574200A17238 /* Student.swift */; };
 		224C99EA2C0059DF00A17238 /* DSHocSinhController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C99E92C0059DF00A17238 /* DSHocSinhController.swift */; };
 		224C99F42C00755100A17238 /* DiemSoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C99F32C00755100A17238 /* DiemSoController.swift */; };
+		226F88DB2C00D42C00E369EC /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 226F88DA2C00D42C00E369EC /* libsqlite3.0.tbd */; };
+		226F88E82C00D48000E369EC /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 226F88DF2C00D47F00E369EC /* FMResultSet.m */; };
+		226F88E92C00D48000E369EC /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 226F88E12C00D47F00E369EC /* FMDatabase.m */; };
+		226F88EA2C00D48000E369EC /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 226F88E32C00D47F00E369EC /* FMDatabasePool.m */; };
+		226F88EB2C00D48000E369EC /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 226F88E42C00D48000E369EC /* FMDatabaseAdditions.m */; };
+		226F88EC2C00D48000E369EC /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 226F88E72C00D48000E369EC /* FMDatabaseQueue.m */; };
+		226F88EE2C00D4C700E369EC /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226F88ED2C00D4C700E369EC /* Database.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,11 +59,25 @@
 		2207C35D2BFF19E000EFE107 /* QuanLyDiemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuanLyDiemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2207C3612BFF19E000EFE107 /* QuanLyDiemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuanLyDiemUITests.swift; sourceTree = "<group>"; };
 		2207C3632BFF19E000EFE107 /* QuanLyDiemUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuanLyDiemUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		223C737F2C030AE200567A06 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		2241C25A2BFF2E55004C6079 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		2241C2602BFF413E004C6079 /* hocsinh.scv */ = {isa = PBXFileReference; lastKnownFileType = text; path = hocsinh.scv; sourceTree = "<group>"; };
 		224C99E52C00574200A17238 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		224C99E92C0059DF00A17238 /* DSHocSinhController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSHocSinhController.swift; sourceTree = "<group>"; };
 		224C99F32C00755100A17238 /* DiemSoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiemSoController.swift; sourceTree = "<group>"; };
+		226F88DA2C00D42C00E369EC /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		226F88DC2C00D47E00E369EC /* QuanLyDiem-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuanLyDiem-Bridging-Header.h"; sourceTree = "<group>"; };
+		226F88DD2C00D47F00E369EC /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = QuanLyDiem/FMDB/src/FMDatabase.h; sourceTree = SOURCE_ROOT; };
+		226F88DE2C00D47F00E369EC /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = QuanLyDiem/FMDB/src/FMResultSet.h; sourceTree = SOURCE_ROOT; };
+		226F88DF2C00D47F00E369EC /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = QuanLyDiem/FMDB/src/FMResultSet.m; sourceTree = SOURCE_ROOT; };
+		226F88E02C00D47F00E369EC /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = QuanLyDiem/FMDB/src/FMDatabasePool.h; sourceTree = SOURCE_ROOT; };
+		226F88E12C00D47F00E369EC /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = QuanLyDiem/FMDB/src/FMDatabase.m; sourceTree = SOURCE_ROOT; };
+		226F88E22C00D47F00E369EC /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = QuanLyDiem/FMDB/src/FMDB.h; sourceTree = SOURCE_ROOT; };
+		226F88E32C00D47F00E369EC /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = QuanLyDiem/FMDB/src/FMDatabasePool.m; sourceTree = SOURCE_ROOT; };
+		226F88E42C00D48000E369EC /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = QuanLyDiem/FMDB/src/FMDatabaseAdditions.m; sourceTree = SOURCE_ROOT; };
+		226F88E52C00D48000E369EC /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = QuanLyDiem/FMDB/src/FMDatabaseAdditions.h; sourceTree = SOURCE_ROOT; };
+		226F88E62C00D48000E369EC /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = QuanLyDiem/FMDB/src/FMDatabaseQueue.h; sourceTree = SOURCE_ROOT; };
+		226F88E72C00D48000E369EC /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = QuanLyDiem/FMDB/src/FMDatabaseQueue.m; sourceTree = SOURCE_ROOT; };
+		226F88ED2C00D4C700E369EC /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				226F88DB2C00D42C00E369EC /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +113,7 @@
 				2207C3562BFF19E000EFE107 /* QuanLyDiemTests */,
 				2207C3602BFF19E000EFE107 /* QuanLyDiemUITests */,
 				2207C33E2BFF19DE00EFE107 /* Products */,
+				226F88D92C00D42C00E369EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,12 +130,12 @@
 		2207C33F2BFF19DE00EFE107 /* QuanLyDiem */ = {
 			isa = PBXGroup;
 			children = (
+				226F88D62C00D31300E369EC /* FMDB */,
 				2207C3752BFF1AE400EFE107 /* Systems */,
 				2207C3742BFF1AB000EFE107 /* Models */,
 				2207C3722BFF1A6800EFE107 /* Controllers */,
 				2207C3712BFF1A2900EFE107 /* Controls */,
 				2207C3462BFF19DE00EFE107 /* Main.storyboard */,
-				2241C2602BFF413E004C6079 /* hocsinh.scv */,
 			);
 			path = QuanLyDiem;
 			sourceTree = "<group>";
@@ -148,6 +171,7 @@
 				2241C25A2BFF2E55004C6079 /* LoginViewController.swift */,
 				224C99E92C0059DF00A17238 /* DSHocSinhController.swift */,
 				224C99F32C00755100A17238 /* DiemSoController.swift */,
+				223C737F2C030AE200567A06 /* SplashScreenViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -169,6 +193,50 @@
 				2207C34E2BFF19DF00EFE107 /* Info.plist */,
 			);
 			name = Systems;
+			sourceTree = "<group>";
+		};
+		226F88D62C00D31300E369EC /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				226F88D82C00D3F900E369EC /* fmdb framework */,
+				226F88D72C00D3F000E369EC /* DAL */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		226F88D72C00D3F000E369EC /* DAL */ = {
+			isa = PBXGroup;
+			children = (
+				226F88ED2C00D4C700E369EC /* Database.swift */,
+			);
+			path = DAL;
+			sourceTree = "<group>";
+		};
+		226F88D82C00D3F900E369EC /* fmdb framework */ = {
+			isa = PBXGroup;
+			children = (
+				226F88DD2C00D47F00E369EC /* FMDatabase.h */,
+				226F88E12C00D47F00E369EC /* FMDatabase.m */,
+				226F88E52C00D48000E369EC /* FMDatabaseAdditions.h */,
+				226F88E42C00D48000E369EC /* FMDatabaseAdditions.m */,
+				226F88E02C00D47F00E369EC /* FMDatabasePool.h */,
+				226F88E32C00D47F00E369EC /* FMDatabasePool.m */,
+				226F88E62C00D48000E369EC /* FMDatabaseQueue.h */,
+				226F88E72C00D48000E369EC /* FMDatabaseQueue.m */,
+				226F88E22C00D47F00E369EC /* FMDB.h */,
+				226F88DE2C00D47F00E369EC /* FMResultSet.h */,
+				226F88DF2C00D47F00E369EC /* FMResultSet.m */,
+				226F88DC2C00D47E00E369EC /* QuanLyDiem-Bridging-Header.h */,
+			);
+			path = "fmdb framework";
+			sourceTree = "<group>";
+		};
+		226F88D92C00D42C00E369EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				226F88DA2C00D42C00E369EC /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +307,7 @@
 				TargetAttributes = {
 					2207C33C2BFF19DE00EFE107 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					2207C3522BFF19E000EFE107 = {
 						CreatedOnToolsVersion = 14.2;
@@ -276,7 +345,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2207C34D2BFF19DF00EFE107 /* LaunchScreen.storyboard in Resources */,
-				2241C2612BFF413E004C6079 /* hocsinh.scv in Resources */,
 				2207C34A2BFF19DF00EFE107 /* Assets.xcassets in Resources */,
 				2207C3482BFF19DE00EFE107 /* Main.storyboard in Resources */,
 			);
@@ -305,10 +373,17 @@
 			files = (
 				224C99EA2C0059DF00A17238 /* DSHocSinhController.swift in Sources */,
 				2241C25B2BFF2E55004C6079 /* LoginViewController.swift in Sources */,
+				226F88E82C00D48000E369EC /* FMResultSet.m in Sources */,
+				223C73802C030AE200567A06 /* SplashScreenViewController.swift in Sources */,
 				2207C3412BFF19DE00EFE107 /* AppDelegate.swift in Sources */,
+				226F88EA2C00D48000E369EC /* FMDatabasePool.m in Sources */,
 				2207C3432BFF19DE00EFE107 /* SceneDelegate.swift in Sources */,
+				226F88EE2C00D4C700E369EC /* Database.swift in Sources */,
 				224C99F42C00755100A17238 /* DiemSoController.swift in Sources */,
 				224C99E62C00574200A17238 /* Student.swift in Sources */,
+				226F88EC2C00D48000E369EC /* FMDatabaseQueue.m in Sources */,
+				226F88E92C00D48000E369EC /* FMDatabase.m in Sources */,
+				226F88EB2C00D48000E369EC /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +558,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -500,6 +576,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ngvlinh.QuanLyDiem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "QuanLyDiem/FMDB/fmdb framework/QuanLyDiem-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -510,6 +588,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -527,6 +606,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ngvlinh.QuanLyDiem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "QuanLyDiem/FMDB/fmdb framework/QuanLyDiem-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

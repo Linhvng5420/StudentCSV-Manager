@@ -1,10 +1,3 @@
-//
-//  LoginViewController.swift
-//  QuanLyDiem
-//
-//  Created by macos on 23/05/2024.
-//
-
 import UIKit
 
 class LoginViewController: UIViewController {
@@ -26,6 +19,7 @@ class LoginViewController: UIViewController {
                 if username == "linh" && password == "1234" {
                     // Chuyển đến màn hình
                     performSegue(withIdentifier: "showDSHocSinh", sender: nil)
+
                 } else {
                     // Hiển thị thông báo lỗi
                     showAlert(message: "Tên đăng nhập hoặc mật khẩu không chính xác.")
