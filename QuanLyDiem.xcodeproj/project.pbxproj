@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2207C3412BFF19DE00EFE107 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207C3402BFF19DE00EFE107 /* AppDelegate.swift */; };
+		2207C3432BFF19DE00EFE107 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207C3422BFF19DE00EFE107 /* SceneDelegate.swift */; };
+		2207C3482BFF19DE00EFE107 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2207C3462BFF19DE00EFE107 /* Main.storyboard */; };
+		2207C34A2BFF19DF00EFE107 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2207C3492BFF19DF00EFE107 /* Assets.xcassets */; };
+		2207C34D2BFF19DF00EFE107 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2207C34B2BFF19DF00EFE107 /* LaunchScreen.storyboard */; };
+		2207C3582BFF19E000EFE107 /* QuanLyDiemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207C3572BFF19E000EFE107 /* QuanLyDiemTests.swift */; };
+		2207C3622BFF19E000EFE107 /* QuanLyDiemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207C3612BFF19E000EFE107 /* QuanLyDiemUITests.swift */; };
+		2207C3642BFF19E000EFE107 /* QuanLyDiemUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207C3632BFF19E000EFE107 /* QuanLyDiemUITestsLaunchTests.swift */; };
+		2241C25B2BFF2E55004C6079 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241C25A2BFF2E55004C6079 /* LoginViewController.swift */; };
+		2241C2612BFF413E004C6079 /* hocsinh.scv in Resources */ = {isa = PBXBuildFile; fileRef = 2241C2602BFF413E004C6079 /* hocsinh.scv */; };
+		224C99E62C00574200A17238 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C99E52C00574200A17238 /* Student.swift */; };
+		224C99EA2C0059DF00A17238 /* DSHocSinhController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C99E92C0059DF00A17238 /* DSHocSinhController.swift */; };
+		224C99F42C00755100A17238 /* DiemSoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C99F32C00755100A17238 /* DiemSoController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2207C3542BFF19E000EFE107 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2207C3352BFF19DE00EFE107 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2207C33C2BFF19DE00EFE107;
+			remoteInfo = QuanLyDiem;
+		};
+		2207C35E2BFF19E000EFE107 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2207C3352BFF19DE00EFE107 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2207C33C2BFF19DE00EFE107;
+			remoteInfo = QuanLyDiem;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2207C33D2BFF19DE00EFE107 /* QuanLyDiem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuanLyDiem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2207C3402BFF19DE00EFE107 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2207C3422BFF19DE00EFE107 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2207C3472BFF19DE00EFE107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2207C3492BFF19DF00EFE107 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2207C34C2BFF19DF00EFE107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2207C34E2BFF19DF00EFE107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2207C3532BFF19E000EFE107 /* QuanLyDiemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuanLyDiemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2207C3572BFF19E000EFE107 /* QuanLyDiemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuanLyDiemTests.swift; sourceTree = "<group>"; };
+		2207C35D2BFF19E000EFE107 /* QuanLyDiemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuanLyDiemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2207C3612BFF19E000EFE107 /* QuanLyDiemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuanLyDiemUITests.swift; sourceTree = "<group>"; };
+		2207C3632BFF19E000EFE107 /* QuanLyDiemUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuanLyDiemUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2241C25A2BFF2E55004C6079 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2241C2602BFF413E004C6079 /* hocsinh.scv */ = {isa = PBXFileReference; lastKnownFileType = text; path = hocsinh.scv; sourceTree = "<group>"; };
+		224C99E52C00574200A17238 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		224C99E92C0059DF00A17238 /* DSHocSinhController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSHocSinhController.swift; sourceTree = "<group>"; };
+		224C99F32C00755100A17238 /* DiemSoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiemSoController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2207C33A2BFF19DE00EFE107 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2207C3502BFF19E000EFE107 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2207C35A2BFF19E000EFE107 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2207C3342BFF19DE00EFE107 = {
+			isa = PBXGroup;
+			children = (
+				2207C33F2BFF19DE00EFE107 /* QuanLyDiem */,
+				2207C3562BFF19E000EFE107 /* QuanLyDiemTests */,
+				2207C3602BFF19E000EFE107 /* QuanLyDiemUITests */,
+				2207C33E2BFF19DE00EFE107 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2207C33E2BFF19DE00EFE107 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2207C33D2BFF19DE00EFE107 /* QuanLyDiem.app */,
+				2207C3532BFF19E000EFE107 /* QuanLyDiemTests.xctest */,
+				2207C35D2BFF19E000EFE107 /* QuanLyDiemUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2207C33F2BFF19DE00EFE107 /* QuanLyDiem */ = {
+			isa = PBXGroup;
+			children = (
+				2207C3752BFF1AE400EFE107 /* Systems */,
+				2207C3742BFF1AB000EFE107 /* Models */,
+				2207C3722BFF1A6800EFE107 /* Controllers */,
+				2207C3712BFF1A2900EFE107 /* Controls */,
+				2207C3462BFF19DE00EFE107 /* Main.storyboard */,
+				2241C2602BFF413E004C6079 /* hocsinh.scv */,
+			);
+			path = QuanLyDiem;
+			sourceTree = "<group>";
+		};
+		2207C3562BFF19E000EFE107 /* QuanLyDiemTests */ = {
+			isa = PBXGroup;
+			children = (
+				2207C3572BFF19E000EFE107 /* QuanLyDiemTests.swift */,
+			);
+			path = QuanLyDiemTests;
+			sourceTree = "<group>";
+		};
+		2207C3602BFF19E000EFE107 /* QuanLyDiemUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2207C3612BFF19E000EFE107 /* QuanLyDiemUITests.swift */,
+				2207C3632BFF19E000EFE107 /* QuanLyDiemUITestsLaunchTests.swift */,
+			);
+			path = QuanLyDiemUITests;
+			sourceTree = "<group>";
+		};
+		2207C3712BFF1A2900EFE107 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				224C99E52C00574200A17238 /* Student.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		2207C3722BFF1A6800EFE107 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2241C25A2BFF2E55004C6079 /* LoginViewController.swift */,
+				224C99E92C0059DF00A17238 /* DSHocSinhController.swift */,
+				224C99F32C00755100A17238 /* DiemSoController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2207C3742BFF1AB000EFE107 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2207C3752BFF1AE400EFE107 /* Systems */ = {
+			isa = PBXGroup;
+			children = (
+				2207C3422BFF19DE00EFE107 /* SceneDelegate.swift */,
+				2207C3402BFF19DE00EFE107 /* AppDelegate.swift */,
+				2207C34B2BFF19DF00EFE107 /* LaunchScreen.storyboard */,
+				2207C3492BFF19DF00EFE107 /* Assets.xcassets */,
+				2207C34E2BFF19DF00EFE107 /* Info.plist */,
+			);
+			name = Systems;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2207C33C2BFF19DE00EFE107 /* QuanLyDiem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2207C3672BFF19E000EFE107 /* Build configuration list for PBXNativeTarget "QuanLyDiem" */;
+			buildPhases = (
+				2207C3392BFF19DE00EFE107 /* Sources */,
+				2207C33A2BFF19DE00EFE107 /* Frameworks */,
+				2207C33B2BFF19DE00EFE107 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuanLyDiem;
+			productName = QuanLyDiem;
+			productReference = 2207C33D2BFF19DE00EFE107 /* QuanLyDiem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2207C3522BFF19E000EFE107 /* QuanLyDiemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2207C36A2BFF19E000EFE107 /* Build configuration list for PBXNativeTarget "QuanLyDiemTests" */;
+			buildPhases = (
+				2207C34F2BFF19E000EFE107 /* Sources */,
+				2207C3502BFF19E000EFE107 /* Frameworks */,
+				2207C3512BFF19E000EFE107 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2207C3552BFF19E000EFE107 /* PBXTargetDependency */,
+			);
+			name = QuanLyDiemTests;
+			productName = QuanLyDiemTests;
+			productReference = 2207C3532BFF19E000EFE107 /* QuanLyDiemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2207C35C2BFF19E000EFE107 /* QuanLyDiemUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2207C36D2BFF19E000EFE107 /* Build configuration list for PBXNativeTarget "QuanLyDiemUITests" */;
+			buildPhases = (
+				2207C3592BFF19E000EFE107 /* Sources */,
+				2207C35A2BFF19E000EFE107 /* Frameworks */,
+				2207C35B2BFF19E000EFE107 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2207C35F2BFF19E000EFE107 /* PBXTargetDependency */,
+			);
+			name = QuanLyDiemUITests;
+			productName = QuanLyDiemUITests;
+			productReference = 2207C35D2BFF19E000EFE107 /* QuanLyDiemUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2207C3352BFF19DE00EFE107 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					2207C33C2BFF19DE00EFE107 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					2207C3522BFF19E000EFE107 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 2207C33C2BFF19DE00EFE107;
+					};
+					2207C35C2BFF19E000EFE107 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 2207C33C2BFF19DE00EFE107;
+					};
+				};
+			};
+			buildConfigurationList = 2207C3382BFF19DE00EFE107 /* Build configuration list for PBXProject "QuanLyDiem" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2207C3342BFF19DE00EFE107;
+			productRefGroup = 2207C33E2BFF19DE00EFE107 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2207C33C2BFF19DE00EFE107 /* QuanLyDiem */,
+				2207C3522BFF19E000EFE107 /* QuanLyDiemTests */,
+				2207C35C2BFF19E000EFE107 /* QuanLyDiemUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2207C33B2BFF19DE00EFE107 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2207C34D2BFF19DF00EFE107 /* LaunchScreen.storyboard in Resources */,
+				2241C2612BFF413E004C6079 /* hocsinh.scv in Resources */,
+				2207C34A2BFF19DF00EFE107 /* Assets.xcassets in Resources */,
+				2207C3482BFF19DE00EFE107 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2207C3512BFF19E000EFE107 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2207C35B2BFF19E000EFE107 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2207C3392BFF19DE00EFE107 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				224C99EA2C0059DF00A17238 /* DSHocSinhController.swift in Sources */,
+				2241C25B2BFF2E55004C6079 /* LoginViewController.swift in Sources */,
+				2207C3412BFF19DE00EFE107 /* AppDelegate.swift in Sources */,
+				2207C3432BFF19DE00EFE107 /* SceneDelegate.swift in Sources */,
+				224C99F42C00755100A17238 /* DiemSoController.swift in Sources */,
+				224C99E62C00574200A17238 /* Student.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2207C34F2BFF19E000EFE107 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2207C3582BFF19E000EFE107 /* QuanLyDiemTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2207C3592BFF19E000EFE107 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2207C3622BFF19E000EFE107 /* QuanLyDiemUITests.swift in Sources */,
+				2207C3642BFF19E000EFE107 /* QuanLyDiemUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2207C3552BFF19E000EFE107 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2207C33C2BFF19DE00EFE107 /* QuanLyDiem */;
+			targetProxy = 2207C3542BFF19E000EFE107 /* PBXContainerItemProxy */;
+		};
+		2207C35F2BFF19E000EFE107 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2207C33C2BFF19DE00EFE107 /* QuanLyDiem */;
+			targetProxy = 2207C35E2BFF19E000EFE107 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2207C3462BFF19DE00EFE107 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2207C3472BFF19DE00EFE107 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2207C34B2BFF19DF00EFE107 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2207C34C2BFF19DF00EFE107 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2207C3652BFF19E000EFE107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2207C3662BFF19E000EFE107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2207C3682BFF19E000EFE107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuanLyDiem/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ngvlinh.QuanLyDiem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2207C3692BFF19E000EFE107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuanLyDiem/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ngvlinh.QuanLyDiem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2207C36B2BFF19E000EFE107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ngvlinh.QuanLyDiemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuanLyDiem.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/QuanLyDiem";
+			};
+			name = Debug;
+		};
+		2207C36C2BFF19E000EFE107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ngvlinh.QuanLyDiemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuanLyDiem.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/QuanLyDiem";
+			};
+			name = Release;
+		};
+		2207C36E2BFF19E000EFE107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ngvlinh.QuanLyDiemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QuanLyDiem;
+			};
+			name = Debug;
+		};
+		2207C36F2BFF19E000EFE107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ngvlinh.QuanLyDiemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QuanLyDiem;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2207C3382BFF19DE00EFE107 /* Build configuration list for PBXProject "QuanLyDiem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2207C3652BFF19E000EFE107 /* Debug */,
+				2207C3662BFF19E000EFE107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2207C3672BFF19E000EFE107 /* Build configuration list for PBXNativeTarget "QuanLyDiem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2207C3682BFF19E000EFE107 /* Debug */,
+				2207C3692BFF19E000EFE107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2207C36A2BFF19E000EFE107 /* Build configuration list for PBXNativeTarget "QuanLyDiemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2207C36B2BFF19E000EFE107 /* Debug */,
+				2207C36C2BFF19E000EFE107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2207C36D2BFF19E000EFE107 /* Build configuration list for PBXNativeTarget "QuanLyDiemUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2207C36E2BFF19E000EFE107 /* Debug */,
+				2207C36F2BFF19E000EFE107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2207C3352BFF19DE00EFE107 /* Project object */;
+}
