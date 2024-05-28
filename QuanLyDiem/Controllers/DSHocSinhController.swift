@@ -302,8 +302,10 @@ extension DSHocSinhController: UIDocumentPickerDelegate {
             
             let mahs = String(columns[0])
             let tenhs = String(columns[1])
-            // Kiểm tra xem có cột điểm không và cột điểm có phải là số thực hay không
-            let diem: Double? = (columns.count > 2) ? Double(columns[2]) : nil
+            
+            // Kiểm tra xem có cột điểm không và cột điểm có phải là số thực, 0 <= diem <= 10
+            let checkDiem: Double? = (columns.count > 2) ? Double(columns[2]) : nil
+            let diem: Double? = (checkDiem != nil && checkDiem! >= 0 && checkDiem! <= 10) ? checkDiem : nil
             
             StatusImportLable.textColor = UIColor.white
             
