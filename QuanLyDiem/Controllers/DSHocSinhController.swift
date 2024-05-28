@@ -16,10 +16,10 @@ class DSHocSinhController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Học Sinh"
+        self.title = "Học Sinh" // Đặt tiêu đề cho màn hình
         
         self.navigationItem.rightBarButtonItems = [
-            // Nhập-Xuất file CSV
+            // Các nút nhập và xuất file CSV
             UIBarButtonItem(title: "Import", style: .plain, target: self, action: #selector(importCSV)),
             UIBarButtonItem(title: "Export", style: .plain, target: self, action: #selector(exportCSV))
         ]
@@ -34,7 +34,7 @@ class DSHocSinhController: UITableViewController {
         // Thiết lập nút Edit và Sort trên navigation bar
         self.navigationItem.leftBarButtonItems = [editButton, sortButton]
         
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell") // Đăng ký kiểu cell cho table view
         
         // Đọc dữ liệu từ cơ sở dữ liệu
         loadData()
@@ -47,7 +47,7 @@ class DSHocSinhController: UITableViewController {
     
     // MARK: Database
     func loadData() {
-        let db = Database() // Tại đây chúng ta khởi tạo đối tượng Database
+        let db = Database() // Tạo đối tượng Database
         self.students = db.readAllDiem() // Đọc dữ liệu và cập nhật vào mảng students
         self.tableView.reloadData() // Sau khi cập nhật dữ liệu, ta cần load lại bảng
     }
@@ -56,15 +56,15 @@ class DSHocSinhController: UITableViewController {
     @objc func importCSV() {
         let documentPicker = UIDocumentPickerViewController(forOpeningContentTypes: [UTType.commaSeparatedText])
         documentPicker.delegate = self
-        present(documentPicker, animated: true, completion: nil)
+        present(documentPicker, animated: true, completion: nil) // Hiển thị trình chọn tài liệu
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return 1 // Chỉ có 1 section trong bảng
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return students.count
+        return students.count // Số lượng hàng trong bảng là số lượng học sinh
     }
     
     // Cấu hình cell cho bảng
@@ -86,14 +86,13 @@ class DSHocSinhController: UITableViewController {
             // Tạo chuỗi CSV, khi điểm là nil thì để trống cột điểm
             let diemString = student.2.map { "\($0)" } ?? ""
             let csvRow = "\(student.0),\(student.1),\(diemString)\n"
-            
             csvString.append(contentsOf: csvRow)
         }
         
         // Chuyển đổi chuỗi thành dữ liệu NSData
         guard let data = csvString.data(using: String.Encoding.utf8) else { return }
         
-        // Tên Lớp để Xuất File
+        // Tên lớp để xuất file
         var className: String = ""
         
         // Tạo dateString với ngày, tháng, năm, giờ và phút
@@ -107,9 +106,7 @@ class DSHocSinhController: UITableViewController {
             let start = range.lowerBound
             let end = fileImportName.index(start, offsetBy: 8, limitedBy: fileImportName.endIndex) ?? fileImportName.endIndex
             className = String(fileImportName[start..<end])
-            
-            // In ra className
-            print(className) // In ra lop
+            print(className)
         } else {
             className = ""
             print("Chuỗi 'Lop' không được tìm thấy.")
@@ -119,7 +116,7 @@ class DSHocSinhController: UITableViewController {
         let tempURL = FileManager.default.temporaryDirectory.appendingPathComponent("Diem [] \(className) \(dateString).csv")
         
         do {
-            try data.write(to: tempURL, options: .atomicWrite)
+            try data.write(to: tempURL, options: .atomicWrite) // Ghi dữ liệu vào file tạm thời
             let activityViewController = UIActivityViewController(activityItems: [tempURL], applicationActivities: nil)
             present(activityViewController, animated: true)
         } catch {
@@ -143,6 +140,7 @@ class DSHocSinhController: UITableViewController {
         self.navigationItem.leftBarButtonItem?.title = isEditing ? "Edit" : "Done"
     }
     
+    // Xoá học sinh khi người dùng swipe để xoá
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
         if editingStyle == .delete {
@@ -170,7 +168,7 @@ class DSHocSinhController: UITableViewController {
             return
         }
         
-        isSortedAscending.toggle()  // Đảo trạng thái
+        isSortedAscending.toggle()  // Đảo trạng thái sắp xếp
         
         // Thực hiện sắp xếp
         students.sort { isSortedAscending ? $0.0 < $1.0 : $0.0 > $1.0 }
@@ -187,8 +185,8 @@ class DSHocSinhController: UITableViewController {
         updateDatabaseWithSortedStudents()
     }
     
+    // Cập nhật cơ sở dữ liệu với danh sách học sinh đã được sắp xếp
     func updateDatabaseWithSortedStudents() {
-        // Tạo một tham chiếu đến CSDL
         let database = Database()
         
         // Cập nhật thứ tự của danh sách học sinh trong CSDL
@@ -200,20 +198,6 @@ class DSHocSinhController: UITableViewController {
         
         print("Danh sách học sinh đã được cập nhật theo MaHS.")
     }
-    
-    // MARK: Di chuyển vị trí item trong tableview
-//    // Cho phép di chuyển hàng cho tất cả các hàng trong bảng
-//        override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-//            return true
-//        }
-//
-//        // Xử lý việc thay đổi vị trí của hàng
-//        override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-//            let movedObject = self.students[sourceIndexPath.row]
-//            students.remove(at: sourceIndexPath.row)
-//            students.insert(movedObject, at: destinationIndexPath.row)
-//
-//        }
     
     // MARK: Chuyển màn hình điểm số
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -263,7 +247,7 @@ extension DSHocSinhController: UIDocumentPickerDelegate {
         
         do {
             let content = try String(contentsOf: url)
-            parseCSV(content)
+            parseCSV(content) // Phân tích nội dung file CSV
             
             // Cập nhật StatusImportLabel với tên file vừa nhập
             StatusImportLable.text = "\"\(fileImportName)\""
@@ -279,9 +263,9 @@ extension DSHocSinhController: UIDocumentPickerDelegate {
     // MARK: Đọc nội dung file CSV và ghi vào cơ sở dữ liệu
     func parseCSV(_ content: String) {
         let rows = content.split(separator: "\n")
-        let database = Database() // Tạo đối tượng database
+        let database = Database()
         
-        guard !rows.dropFirst().isEmpty else {
+        guard !rows.dropFirst().isEmpty else { // Kiểm tra nếu file rỗng
             StatusImportLable.textColor = UIColor.red
             fileImportName = "File Import Rỗng"
             // Xoá dữ liệu hiện tại
@@ -335,9 +319,10 @@ extension DSHocSinhController: UIDocumentPickerDelegate {
         tableView.reloadData()
     }
     
+    // Xoá dữ liệu hiện tại
     func clearCurrentData() {
         let database = Database() // Tạo đối tượng database
-        if database.deleteAllDiem() {
+        if database.deleteAllDiem() { // Xoá toàn bộ dữ liệu điểm trong cơ sở dữ liệu
             print("Dữ liệu cũ đã được xoá.")
         } else {
             print("Không thể xoá dữ liệu cũ trong bảng")

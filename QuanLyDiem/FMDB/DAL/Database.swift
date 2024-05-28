@@ -14,6 +14,7 @@ class Database {
     
     // MARK: - Constructors
     init() {
+        // Lấy đường dẫn đến thư mục tài liệu của người dùng
         let directories = NSSearchPathForDirectoriesInDomains(.documentDirectory, .allDomainsMask, true)
         DB_PATH = directories[0] + "/" + DB_NAME
         database = FMDatabase(path: DB_PATH)
@@ -26,7 +27,7 @@ class Database {
             \(DIEM_TENHS) TEXT,
             \(DIEM_DIEM) REAL
             )
-            """
+            """  // Câu lệnh SQL để tạo bảng nếu chưa tồn tại
             if tableCreate(sql: sql, tableName: DIEM_TABLE_NAME) {
                 print("Bảng \(DIEM_TABLE_NAME) đã sẵn sàng.")
             } else {
@@ -39,11 +40,11 @@ class Database {
     
     // MARK: - Hàm khởi tạo bảng dữ liệu
     private func tableCreate(sql: String, tableName: String) -> Bool {
-        var isSuccessful = false
+        var isSuccessful = false  // Biến kiểm tra kết quả tạo bảng
         if open() {
-            defer { close() }
+            defer { close() }  // đóng cơ sở dữ liệu sau khi hoàn thành
             if !database!.tableExists(tableName) {
-                isSuccessful = database!.executeStatements(sql)
+                isSuccessful = database!.executeStatements(sql)  // Tạo bảng nếu nó chưa tồn tại
             } else {
                 isSuccessful = true  // Bảng đã tồn tại
             }
@@ -71,7 +72,7 @@ class Database {
         database?.close()
     }
     
-    // MARK: - Hàm xoá csdl
+    // MARK: - Hàm xoá tất cả dữ liệu trong bảng điểm
     func deleteAllDiem() -> Bool {
         if open() {
             defer { close() }
@@ -88,7 +89,7 @@ class Database {
         return false
     }
     
-    // MARK: - Hàm xoá dữ liệu khỏi bảng điểm
+    // MARK: - Hàm xoá dữ liệu khỏi bảng điểm theo mã học sinh
     func deleteDiem(mahs: String) -> Bool {
         if open() {
             defer { close() }
@@ -105,14 +106,14 @@ class Database {
         return false
     }
     
-    // MARK: - Hàm thêm dữ liệu vào bảng điểm
+    // MARK: - Hàm thêm hoặc cập nhật dữ liệu vào bảng điểm
     func insertOrUpdateDiem(mahs: String, tenhs: String, diem: Double?) -> Bool {
         if open() {
             defer { close() }
             let sql = """
             INSERT OR REPLACE INTO \(DIEM_TABLE_NAME) (\(DIEM_MAHS), \(DIEM_TENHS), \(DIEM_DIEM))
             VALUES (?, ?, ?)
-            """
+            """  // Câu lệnh SQL để thêm hoặc cập nhật dữ liệu
             do {
                 // Dùng NSNull để biểu thị giá trị NULL khi diem là nil
                 let diemValue: Any = diem as Any? ?? NSNull()
