@@ -1,25 +1,25 @@
 # Screenshots
 <p align="center">
-<img src=images\Image 01.png width="200" style="border: 2px solid black">
-<img src=images\Image 02.png width="200" style="border: 2px solid black">
-<img src=images\Image 03.png width="200" style="border: 2px solid black">
+<img src=images\Image01.png width="200" style="border: 2px solid black">
+<img src=images\Image02.png width="200" style="border: 2px solid black">
+<img src=images\Image03.png width="200" style="border: 2px solid black">
 </p>
 <p align="center">
-<img src=images\Image 04.png width="200" style="border: 2px solid black">
-<img src=images\Image 05.png width="200" style="border: 2px solid black">
-<img src=images\Image 06.png width="200" style="border: 2px solid black">
+<img src=images\Image04.png width="200" style="border: 2px solid black">
+<img src=images\Image05.png width="200" style="border: 2px solid black">
+<img src=images\Image06.png width="200" style="border: 2px solid black">
 </p>
 <p align="center">
-<img src=images\Image 07.png width="200" style="border: 2px solid black">
-<img src=images\Image 08.png width="200" style="border: 2px solid black">
-<img src=images\Image 09.png width="200" style="border: 2px solid black">
+<img src=images\Image07.png width="200" style="border: 2px solid black">
+<img src=images\Image08.png width="200" style="border: 2px solid black">
+<img src=images\Image09.png width="200" style="border: 2px solid black">
 </p>
 <p align="center">
-<img src=images\Image 10.png width="200" style="border: 2px solid black">
-<img src=images\Image 11.png width="200" style="border: 2px solid black">
+<img src=images\Image10.png width="200" style="border: 2px solid black">
+<img src=images\Image11.png width="200" style="border: 2px solid black">
 </p>
 <p align="center">
-<img src=images\Image 14.png width="200" style="border: 2px solid black"></p>
+<img src=images\Image14.png width="200" style="border: 2px solid black"></p>
 </p>
 
 # A. Cách Code Hoạt Động
@@ -450,9 +450,9 @@ override func viewDidLoad() {
 
 ```swift
 func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-    if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+    if let pickedImage= info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
         studentImageView.contentMode = .scaleAspectFit
-        studentImageView.image = pickedImage
+        studentImageView.Image= pickedImage
     }
     dismiss(animated: true, completion: nil)
 }
