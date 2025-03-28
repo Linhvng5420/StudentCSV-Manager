@@ -3,23 +3,22 @@
 <img src=Images\Image01.png width="200" style="border: 2px solid black">
 <img src=Images\Image02.png width="200" style="border: 2px solid black">
 <img src=Images\Image03.png width="200" style="border: 2px solid black">
+<img src=Images\Image04.png width="200" style="border: 2px solid black">
 </p>
 <p align="center">
-<img src=Images\Image04.png width="200" style="border: 2px solid black">
 <img src=Images\Image05.png width="200" style="border: 2px solid black">
 <img src=Images\Image06.png width="200" style="border: 2px solid black">
 </p>
 <p align="center">
 <img src=Images\Image07.png width="200" style="border: 2px solid black">
 <img src=Images\Image08.png width="200" style="border: 2px solid black">
+</p>
+<p align="center">
 <img src=Images\Image09.png width="200" style="border: 2px solid black">
-</p>
-<p align="center">
 <img src=Images\Image10.png width="200" style="border: 2px solid black">
-<img src=Images\Image11.png width="200" style="border: 2px solid black">
 </p>
 <p align="center">
-<img src=Images\Image14.png width="200" style="border: 2px solid black"></p>
+<img src=Images\Image11.png width="200" style="border: 2px solid black">
 </p>
 
 # A. Cách Code Hoạt Động
