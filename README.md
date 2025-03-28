@@ -1,25 +1,25 @@
 # Screenshots
 <p align="center">
-<img src=images\Image01.png width="200" style="border: 2px solid black">
-<img src=images\Image02.png width="200" style="border: 2px solid black">
-<img src=images\Image03.png width="200" style="border: 2px solid black">
+<img src=Images\Image01.png width="200" style="border: 2px solid black">
+<img src=Images\Image02.png width="200" style="border: 2px solid black">
+<img src=Images\Image03.png width="200" style="border: 2px solid black">
 </p>
 <p align="center">
-<img src=images\Image04.png width="200" style="border: 2px solid black">
-<img src=images\Image05.png width="200" style="border: 2px solid black">
-<img src=images\Image06.png width="200" style="border: 2px solid black">
+<img src=Images\Image04.png width="200" style="border: 2px solid black">
+<img src=Images\Image05.png width="200" style="border: 2px solid black">
+<img src=Images\Image06.png width="200" style="border: 2px solid black">
 </p>
 <p align="center">
-<img src=images\Image07.png width="200" style="border: 2px solid black">
-<img src=images\Image08.png width="200" style="border: 2px solid black">
-<img src=images\Image09.png width="200" style="border: 2px solid black">
+<img src=Images\Image07.png width="200" style="border: 2px solid black">
+<img src=Images\Image08.png width="200" style="border: 2px solid black">
+<img src=Images\Image09.png width="200" style="border: 2px solid black">
 </p>
 <p align="center">
-<img src=images\Image10.png width="200" style="border: 2px solid black">
-<img src=images\Image11.png width="200" style="border: 2px solid black">
+<img src=Images\Image10.png width="200" style="border: 2px solid black">
+<img src=Images\Image11.png width="200" style="border: 2px solid black">
 </p>
 <p align="center">
-<img src=images\Image14.png width="200" style="border: 2px solid black"></p>
+<img src=Images\Image14.png width="200" style="border: 2px solid black"></p>
 </p>
 
 # A. Cách Code Hoạt Động
