@@ -1,3 +1,27 @@
+# Screenshots
+<p align="center">
+<img src=images\Image 01.png width="200" style="border: 2px solid black">
+<img src=images\Image 02.png width="200" style="border: 2px solid black">
+<img src=images\Image 03.png width="200" style="border: 2px solid black">
+</p>
+<p align="center">
+<img src=images\Image 04.png width="200" style="border: 2px solid black">
+<img src=images\Image 05.png width="200" style="border: 2px solid black">
+<img src=images\Image 06.png width="200" style="border: 2px solid black">
+</p>
+<p align="center">
+<img src=images\Image 07.png width="200" style="border: 2px solid black">
+<img src=images\Image 08.png width="200" style="border: 2px solid black">
+<img src=images\Image 09.png width="200" style="border: 2px solid black">
+</p>
+<p align="center">
+<img src=images\Image 10.png width="200" style="border: 2px solid black">
+<img src=images\Image 11.png width="200" style="border: 2px solid black">
+</p>
+<p align="center">
+<img src=images\Image 14.png width="200" style="border: 2px solid black"></p>
+</p>
+
 # A. Cách Code Hoạt Động
 Ứng dụng này là một ứng dụng quản lý danh sách học sinh, cho phép người dùng nhập, xuất và chỉnh sửa thông tin học sinh từ file CSV. Dưới đây là phân tích chi tiết về cách ứng dụng hoạt động:
 
